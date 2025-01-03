@@ -1,0 +1,244 @@
+/* INTER FONTS ONLINE */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    /* COLORS */
+    --nav-color: #7f7f90;
+    --nav-hover-color: #ce1212;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #7f7f90;
+    --nav-dropdown-hover-color: #ce1212;
+    --background-color: #ffffff;
+    --default-color: #212529;
+    --heading-color: #37373f;
+    --accent-color: #ce1212;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    /* AMATIC FONTS */
+    --default-font-family: 'Amatic SC';
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.light-background{
+    --background-color: #f2f2f2;
+    --surface-color: #ffffff;
+}
+/* HEADER */
+.header{
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 20px 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+/* LOGO */
+.logo{
+    line-height: 1;
+}
+.logo h1{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+    font-family: var(--default-font);
+}
+.logo span{
+    color: var(--accent-color);
+    font-size: 36px;
+}
+/* NAVBAR */
+.navbar-nav-menu ul li{
+    white-space: nowrap;
+    padding: 15px 14px;
+}
+.navbar-nav-menu a{
+    color: var(--nav-color);
+    font-size: 15px;
+    padding: 0 2px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s all ease-in-out;
+    position: relative;
+}
+.navbar-nav-menu a:hover{
+    border: 1px  var(--accent-color);
+}
+/* BOOK TABLE BUTTON CSS */
+.btn-getstarted{
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    font-size: 14px;
+    padding: 8px 26px;
+    margin: 0;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+    margin-right: 15px;
+}
+.btn-getstarted:hover{
+    background-color: #ce1212d0;
+}
+/* OFF CANVAS */
+.offcanvas-btn{
+    font-size: 30px;
+    display: none;
+}
+.offcanvas-btn button{
+    background-color: transparent;
+    border: none;
+}
+/* SECTION 1 FOOD CSS START */
+.hero{
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+}
+.section{
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 92px;
+    overflow: clip;
+}
+.title{
+    font-size: 64px;
+    font-family: var(--default-font-family);
+    font-weight: 700;
+}
+.title-content{
+    font-size: 20px;
+    margin: 5px 0 30px;
+    color: #5f6265;
+}
+.btn-watch-video{
+    font-size: 16px;
+    transition: 0.5s;
+    margin-left: 25px;
+    color: var(--default-color);
+    font-weight: 500;
+}
+.btn-watch-video i{
+    color: var(--accent-color);
+    font-size: 32px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+}
+/* SECTION 2 ABOUT */
+.section-about-title{
+    padding-bottom: 60px;
+    position: relative;
+}
+.section-about-title h2{
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    display: inline-block;
+    text-transform: uppercase;
+}
+.about-us{
+    color: var(--heading-color);
+    margin: 10px 0 0 0;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: var(--default-font-family);
+}
+.description-title{
+    color: var(--accent-color);
+}
+.book-a-table{
+    border: 4px solid color-mix(in srgb, var(--default-color), transparent 30%);
+        padding: 22px;
+}
+.book-a-table h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.book-a-table p{
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+}
+.content p{
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+.content ul li{
+    padding: 0 0 10px 30px;
+    position: relative;
+}
+.content ul li i{
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: -3px;
+    color: var(--accent-color);
+}
+.core{
+    color: #212529 !important;
+}
+.pulsating-play-btn{
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+/* .pulsating-play-btn::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation: pulsate-play-btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+} */
+.pulsating-play-btn::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+}
+/* At Yummy, we believe in offering more than just a place to sleep. Our rooms are designed with your comfort in mind, featuring plush beds, elegant furnishings, and modern amenities. Whether you're here for a quick getaway or an extended stay, we provide a cozy haven where relaxation comes easy. */
